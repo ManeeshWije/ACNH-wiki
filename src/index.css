@@ -10,3 +10,7 @@ body {
   margin: 0;
 }
 
+#basic-nav-dropdown {
+  text-decoration: none;
+  color: black;
+}
