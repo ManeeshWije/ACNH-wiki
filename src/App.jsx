@@ -14,10 +14,6 @@ function App() {
         <Route path="/villagers" element={<Villagers />} />
         <Route path="/about" element={<About />} />
       </Routes>
-      <hr className="m-auto w-75" />
-      <br/>
-      <Navigation />
-      <Main/>
     </BrowserRouter>
   );
 }
