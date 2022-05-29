@@ -7,8 +7,8 @@ module.exports = {
     extend: {
       fontFamily: {
         finkHeavy: ["FinkHeavy", "sans-serif"],
-      }
+      },
     },
   },
   plugins: [],
-}
+};

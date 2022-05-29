@@ -3,8 +3,6 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Landing from "./Components/Landing";
 import Villagers from "./Components/Villagers";
 import About from "./Components/About";
-import Navigation from "./Components/Navigation";
-import Main from "./Components/Main";
 
 function App() {
   return (
