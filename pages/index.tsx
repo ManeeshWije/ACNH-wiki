@@ -1,6 +1,8 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import Navigation from '../components/Navigation';
+import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
 
 export default function Home() {
   return (
@@ -11,11 +13,32 @@ export default function Home() {
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
-      <div className='flex justify-center items-center'>
+      <div className='flex flex-col justify-center items-center content-center py-8'>
+        <p className='text-8xl text-teal-400'>acnh wiki</p>
+        <div className='py-12'></div>
         <Navigation />
+      </div>
+      <div className='flex flex-col justify-center items-center'>
+        <h1 className='text-teal-400'>Today's Birthday</h1>
+        <Card style={{ width: '18rem' }}>
+          <Card.Img variant='top' src='holder.js/100px180' />
+          <Card.Body>
+            <Card.Title>Card Title</Card.Title>
+            <Card.Text>
+              Lorem ipsum dolor sit amet, officia excepteur ex fugiat
+              reprehenderit enim labore culpa sint ad nisi Lorem pariatur mollit
+              ex esse exercitation amet. Nisi anim cupidatat excepteur officia.
+              Reprehenderit nostrud nostrud ipsum Lorem est aliquip amet
+            </Card.Text>
+            <Button variant='primary'>Go somewhere</Button>
+          </Card.Body>
+        </Card>
+      </div>
+      <div className='flex justify-center items-center'>
         <video
-          className='absolute right-0 top-0 min-w-full min-h-full -z-10 object-cover brightness-25 overflow-hidden'
+          className='top-0 absolute -z-10 object-cover brightness-25 overflow-hidden'
           autoPlay
+          loop
           muted
           src={'/demo.mp4'}
         ></video>
