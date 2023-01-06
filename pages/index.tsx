@@ -3,8 +3,39 @@ import Image from 'next/image';
 import Navigation from '../components/Navigation';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import axios from 'axios';
+import { useState, useEffect } from 'react';
 
 export default function Home() {
+  const [birthdayAnimal, setBirthdayAnimal] = useState();
+
+  useEffect(() => {
+    const url = 'https://acnhapi.com/v1/villagers';
+    const iterate = (obj: any) => {
+      Object.keys(obj).forEach((key) => {
+        // console.log(`key: ${key}, value: ${obj[key]}`);
+        for (let animal of obj[key]) {
+          console.log(animal)
+        }
+        // if (typeof obj[key] === 'object' && obj[key] === '') {
+        //   iterate(obj[key]);
+        // }
+      });
+    };
+
+    const fetchData = async () => {
+      try {
+        const response = await fetch(url);
+        const json = await response.json();
+        // console.log(json);
+        iterate(json);
+      } catch (error) {
+        console.error(error);
+      }
+    };
+    fetchData();
+  }, []);
+
   return (
     <>
       <Head>
