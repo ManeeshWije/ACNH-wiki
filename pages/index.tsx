@@ -8,11 +8,11 @@ export default function Home() {
   const [birthdayAnimalName, setBirthdayAnimalName] = useState('');
 
   useEffect(() => {
-    const url = 'https://acnhapi.com/v1/villagers';
-    let curr = new Date();
-    let month = curr.getMonth() + 1;
-    let day = curr.getDate();
-    let dateStr = `${day}/${month}`;
+    const url: string = 'https://acnhapi.com/v1/villagers';
+    let curr: Date = new Date();
+    let month: Number = curr.getMonth() + 1;
+    let day: Number = curr.getDate();
+    let dateStr: string = `${day}/${month}`;
     const fetchData = async () => {
       const response: any = await fetch(url);
       const data: any = await response.json();
