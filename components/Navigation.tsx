@@ -30,7 +30,7 @@ export default function Navigation() {
             }
           >
             <NavDropdown.Item className='w-full' href='/npcs'>
-              NPC's
+              NPC&apos;s
             </NavDropdown.Item>
             <NavDropdown.Item className='w-full' href='/villagers'>
               Villagers

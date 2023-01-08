@@ -40,7 +40,7 @@ export default function Home() {
         <Navigation />
       </div>
       <div className='flex flex-col justify-center items-center'>
-        <h1 className='text-teal-400'>Today's Birthday</h1>
+        <h1 className='text-teal-400'>Today&apos;s Birthday</h1>
         <Card style={{ width: '18rem' }}>
           <Card.Img variant='top' src={birthdayAnimal.image_uri} />
           <Card.Body>
@@ -49,7 +49,7 @@ export default function Home() {
             <Card.Text>Species: {birthdayAnimal.species}</Card.Text>
             <Card.Text>Hobby: {birthdayAnimal.hobby}</Card.Text>
             <Card.Text>Gender: {birthdayAnimal.gender}</Card.Text>
-            <Card.Text>Saying: "{birthdayAnimal.saying}"</Card.Text>
+            <Card.Text>Saying: &quot;{birthdayAnimal.saying}&quot;</Card.Text>
           </Card.Body>
         </Card>
       </div>
