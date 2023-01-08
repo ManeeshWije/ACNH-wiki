@@ -115,5 +115,6 @@ video {
   background-attachment: scroll;
   background-position: center center;
   background-size: cover;
-  min-height: 125%;
+  min-height: 175%;
+  /* min-width: 150%; */
 }

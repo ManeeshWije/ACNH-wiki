@@ -3,7 +3,7 @@ import React from 'react';
 export default function Footer() {
   return (
     <footer className='text-center text-white'>
-      <div className='container pt-9'>
+      <div className='container pt-32'>
         <div className='flex justify-center text-white'>
           <a href='#!' className='mr-9 text-white'>
             <svg
