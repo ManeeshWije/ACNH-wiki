@@ -6,17 +6,17 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Footer from '../components/Footer';
 
 const fink = localFont({
-  src: './fonts/FinkHeavy.woff',
-  variable: '--font-fink-bold',
+    src: './fonts/FinkHeavy.woff',
+    variable: '--font-fink-bold',
 });
 
 export default function App({ Component, pageProps }: AppProps) {
-  return (
-    <ThemeProvider>
-      <main className={fink.className}>
-        <Component {...pageProps} />
-        <Footer />
-      </main>
-    </ThemeProvider>
-  );
+    return (
+        <ThemeProvider>
+            <main className={fink.className}>
+                <Component {...pageProps} />
+                <Footer />
+            </main>
+        </ThemeProvider>
+    );
 }
